@@ -2,11 +2,7 @@ package trees;
 // non-recursive java program for inorder traversal
  
 /* importing the necessary class */
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
-import java.util.Stack;
+
  
 /* Class containing left and right child of current 
  node and key value*/
