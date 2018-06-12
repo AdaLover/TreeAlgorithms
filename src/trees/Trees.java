@@ -1,11 +1,5 @@
 package trees;
-// non-recursive java program for inorder traversal
- 
-/* importing the necessary class */
 
- 
-/* Class containing left and right child of current 
- node and key value*/
 class Node {
  
     int data;
@@ -59,6 +53,20 @@ class Trees
             }
             else
              curr.left=justMade;
+        }
+        Node search(int data)
+        {
+            Node curr=getRoot();
+            while(curr!=null)
+            {
+                if(curr.data==data)break;
+                if(curr.data>data)
+                    curr=curr.left;
+                else
+                    curr=curr.right;
+            }
+
+            return curr;
         }
         void insert(int input)
         {

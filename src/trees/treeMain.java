@@ -9,7 +9,7 @@ public class treeMain {
         tree.insert(25);
         tree.insert(19);
         tree.insert(4);
-        BfsTraversal BfsTraversal = new BfsTraversal(tree);
-        BfsTraversal.performBFS();
+        InorderSuccessor in =new InorderSuccessor(tree);
+        in.findSuccessor(19);
     }
 }
