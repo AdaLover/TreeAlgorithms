@@ -9,7 +9,7 @@ public class treeMain {
         tree.insert(25);
         tree.insert(19);
         tree.insert(4);
-        InorderSuccessor in =new InorderSuccessor(tree);
-        in.findSuccessor(19);
+        LCS lcs = new LCS(tree);
+        lcs.findAncestor(25,19);
     }
 }
